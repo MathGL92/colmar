@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* HEADER */
+
+header {
+    height: 4rem;
+    width: 100%;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+header a {
+    color: black;
+}
