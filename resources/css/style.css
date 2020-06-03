@@ -10,39 +10,44 @@ h1 {
     color: dimgray;
     font-size: 3rem;
     font-weight: bold;
-    margin: 0 auto;
-    padding: 2rem 0;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
     color: dimgray;
     font-size: 2rem;
     font-weight: bold;
-    margin: 0 auto;
-    padding: 2rem 0;
-}
-
-.flex-container {
-    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .col {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 main {
     position: relative;
     top: 4rem;
+}
+
+.left {
+    width: 60%;
+    padding: 2rem 1.5rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.right {
+    width: 40%;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 /* HEADER */
@@ -141,14 +146,16 @@ header a {
 /* Banner */
 
 #learn {
-    padding: 2rem 1.5rem;
     background-color: lightgray;
     width: 100%;
+    height: auto;
+    display: flex;
 }
 
 #banner {
     width: 60%;
     height: auto;
+    padding: 2rem 1.5rem;
 }
 
 #banner img {
@@ -156,22 +163,20 @@ header a {
     height: auto;
 }
 
-#banner2 {
-    margin-left: 1.5rem;
+#description-banner {
     width: 40%;
     display: flex;
     justify-content: center;
-    text-align: left;
 }
 
-
-#button {
+button {
     padding: 0.5rem 4rem;
     background-color: dimgray;
     color: white;
     text-align: center;
     font: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    width: 20rem;
 }
 
 /* Practice */
@@ -181,14 +186,11 @@ header a {
     flex-direction: row;
     width: 100%;
     height: auto;
-    padding: 2rem 0 2rem 1.5rem;
     background-color: whitesmoke;
 }
 
 #left-content {
-    width: 60%;
-    height: auto;
-    padding-right: 2rem;
+    padding: 2rem 1.5rem;
 }
 
 #left-content img {
@@ -196,35 +198,46 @@ header a {
     height: auto;
 }
 
+.reference {
+    font-weight: 600;
+}
 
 #right-content {
     width: 40%;
-    display: flex;
-    flex-direction: column;
 }
 
 .bloc-border {
     border: 1px solid lightgray;
     margin: 1px 0;
+    width: 100%;
 }
 
 #right-content .img-container {
     width: 35%;
     height: auto;
+    padding: 1rem;
 }
 
 #right-content .text-container {
     width: 65%;
     height: auto;
     text-align: left;
+    justify-content: center;
 }
 
 #right-content img {
-    padding: 1rem 1rem;
     width: 100%;
     height: auto;
 }
 
+#right-content a {
+    color: #28BFB2;
+    text-decoration: none;
+}
+
+#grey {
+    background-color: #d8d8d8;
+}
 
 /* Courses */
 
@@ -233,8 +246,15 @@ header a {
 }
 
 #courses {
-    padding: 0 2.5rem;
     background-color: lightgray;
+    width: 100%;
+}
+
+#container-courses {
+    width: 100%;    
+}
+
+.row-course {
     width: 100%;
 }
 
@@ -243,11 +263,21 @@ header a {
     background-color: white;
     flex-wrap: wrap;
     display: flex;
+    width: 30%;
+}
+
+.course img {
+    width: 100%;
 }
 
 .content-course {
-    margin-left: 1rem;
+    margin: 1rem 0 1.5rem 1rem;
 }
+
+
+
+
+
 
 video {
     width: 100%;
