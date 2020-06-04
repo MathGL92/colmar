@@ -30,12 +30,16 @@ p {
 .row {
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .col {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 main {
@@ -160,6 +164,7 @@ header a {
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: row;
 }
 
 #banner {
@@ -188,6 +193,34 @@ button {
     font-size: 1.5rem;
     width: 20rem;
 }
+
+@media only screen and (max-width: 800px) {
+    #learn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #banner {
+        width: 100%;
+        padding: 0;
+    }
+
+    #description-banner {
+        width: 100%;
+        padding: 0 1rem 2rem 1rem;
+    }
+
+    #description-banner h1 {
+        padding: 2rem 0;
+    }
+
+    button {
+        width: 90%;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+}
+
 
 /* Practice */
 
@@ -250,6 +283,24 @@ button {
     background-color: #d8d8d8;
 }
 
+@media only screen and (max-width: 800px) {
+    #practice #left-content {
+        display: none;
+    }
+
+    .col-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #right-content .img-container {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+}    
+
 /* Courses */
 
 #courses {
@@ -294,6 +345,33 @@ button {
     text-transform: uppercase;
     font-weight: lighter;
 }
+
+@media only screen and (max-width: 800px) {
+    #container-courses-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #courses {
+        background-color: whitesmoke;
+        border: 1px lightgray solid;
+    }
+
+    #courses h1 {
+        padding-bottom: 1rem;
+    }
+
+    #courses h2 {
+        padding: 1rem 1rem 1.5rem 1rem;
+        text-align: left;
+        background-color: lightgray;
+        margin: 0.5rem 0;
+        width: 90%;
+        font-size: 1.5rem;
+    }
+}    
+
 
 /* Thesis */
 
