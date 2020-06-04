@@ -35,6 +35,7 @@ p {
 .col {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 main {
@@ -260,24 +261,29 @@ button {
     width: 100%;    
 }
 
-.row-course {
-    width: 100%;
-}
-
 #up-row {
     margin: 2rem 0;
+}
+
+.row-course {
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .course {
     margin: 0rem 1rem;
     background-color: white;
-    flex-wrap: wrap;
-    display: flex;
     width: 30%;
+}
+
+#courses .img-container {
+    width: 100%;
 }
 
 .course img {
     width: 100%;
+    height: auto;
 }
 
 .content-course {
