@@ -180,17 +180,17 @@ header a {
 #description-banner {
     width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 button {
-    padding: 0.5rem 4rem;
+    padding: 0.5rem 2rem;
     background-color: dimgray;
     color: white;
     text-align: center;
     font: bold;
     font-size: 1.5rem;
-    width: 20rem;
+    width: 80%;
 }
 
 @media only screen and (max-width: 800px) {
