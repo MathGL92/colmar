@@ -32,6 +32,7 @@ p {
     flex-direction: row;
     flex-grow: 1;
     flex-shrink: 1;
+    align-items: center;
 }
 
 .col {
@@ -406,6 +407,7 @@ button {
 
 #thesis-col-right {
     width: 40%;
+    justify-content: center;
 }
 
 #thesis-col-right .img-container {
