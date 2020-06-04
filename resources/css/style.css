@@ -37,7 +37,6 @@ p {
 .col {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex-grow: 1;
     flex-shrink: 1;
 }
@@ -90,7 +89,7 @@ header img {
 
 .logo {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #colmar-logo {
@@ -110,7 +109,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 header a {
@@ -427,6 +426,11 @@ button {
     justify-content: center;
 }
 
+@media only screen and (max-width: 800px) {
+    #thesis h1 {
+        padding: 2rem 0 1rem 0;
+    }
+}  
 
 /* footer */
 
