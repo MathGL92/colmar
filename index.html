@@ -75,7 +75,7 @@
                         <p><a href="#">Read more</a></p>
                     </div>
                 </div>
-                <div class="row bloc-border" id="grey">
+                <div class="row bloc-border grey">
                     <div class="img-container">
                         <img src="./resources/images/information-guest-lecture.jpg" alt="Guest">
                     </div>
@@ -90,7 +90,7 @@
         <section id="courses">
             <h1 class="center">Start Learning</h1>
             <div id="container-courses">
-                <div class="row row-course">
+                <div class="row row-course" id="up-row">
                     <div class="col course">
                         <div>
                             <img src="./resources/images/course-software.jpg" alt="Software Engineering">
@@ -158,31 +158,43 @@
         </section>
         <section id="thesis">
             <h1 class="center">Thesis Exhibit</h1>
-            <div class="col">
-                <video controls>
-                    <source src="resources/videos/thesis.mp4" type="video/mp4">
-                </video>
-                <h2>Reimagine Urban</h2>
-                <p>"Lorem ipsum dolor sit amet, consectetur adpiscing elit. Lorem ipsum dolor sit amet, consectetur adpiscing elit. Lorem ipsum dolor sit amet, consectetur adpiscing elit. Lorem ipsum dolor sit amet, consectetur adpiscing elit."</p>
-            </div>
-            <div class="col">
-                <div class="row">
-                    <img src="./resources/images/thesis-fisma.jpg" alt="Fisma">
-                    <h2>Fisma: Design and Prototype</h2>
-                    <p>Designer Showcase of new prototype product</p>
+            <div id="thesis-container">
+                <div class="col" id="thesis-col-left">
+                    <video controls>
+                        <source src="resources/videos/thesis.mp4" type="video/mp4">
+                    </video>
+                    <h2>Reimagine Urban</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adpiscing elit. Lorem ipsum dolor sit amet, consectetur adpiscing elit. Lorem ipsum dolor sit amet, consectetur adpiscing elit. Lorem ipsum dolor sit amet, consectetur adpiscing elit."</p>
                 </div>
-                <div class="row">
-                    <img src="./resources/images/thesis-now-and-then.jpg" alt="Now and then">
-                    <h2>Now and then</h2>
-                    <p>Research study about New York</p>
+                <div class="col" id="thesis-col-right">
+                    <div class="row grey bloc-border">
+                        <div class="img-container">
+                            <img src="./resources/images/thesis-fisma.jpg" alt="Fisma">
+                        </div>
+                        <div class="col text-container">
+                            <h2>Fisma: Design and Prototype</h2>
+                            <p>Designer Showcase of new prototype product</p>
+                        </div>
+                    </div>
+                    <div class="row bloc-border">
+                        <div class="img-container">
+                            <img src="./resources/images/thesis-now-and-then.jpg" alt="Now and then">
+                        </div>
+                        <div class="col text-container">
+                            <h2>Now and then</h2>
+                            <p>Research study about New York</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>© 2020 Mathiue Longe. All rights reserved</p>
-        <p>Terms</p>
-        <p>Privacy</p>
+        <p>© 2020 Mathieu Longe. All rights reserved</p>
+        <div class="links">
+            <p><a href="#">Terms</a></p>
+            <p><a href="#">Privacy</a></p>
+        </div>
     </footer>
 </body>
 </html>

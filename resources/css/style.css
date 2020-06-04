@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* General */
@@ -20,6 +21,10 @@ h2 {
     font-weight: bold;
     margin: 0;
     padding: 0;
+}
+
+p {
+    line-height: 1.8rem;
 }
 
 .row {
@@ -48,6 +53,10 @@ main {
     width: 40%;
     flex-grow: 1;
     flex-shrink: 1;
+}
+
+.center {
+    text-align: center;
 }
 
 /* HEADER */
@@ -204,6 +213,7 @@ button {
 
 #right-content {
     width: 40%;
+    padding-top: 2rem;
 }
 
 .bloc-border {
@@ -235,19 +245,15 @@ button {
     text-decoration: none;
 }
 
-#grey {
+.grey {
     background-color: #d8d8d8;
 }
 
 /* Courses */
 
-.center {
-    text-align: center;
-}
-
 #courses {
     background-color: lightgray;
-    width: 100%;
+    padding: 2rem 3.5rem;
 }
 
 #container-courses {
@@ -258,8 +264,12 @@ button {
     width: 100%;
 }
 
+#up-row {
+    margin: 2rem 0;
+}
+
 .course {
-    margin: 2rem 2rem;
+    margin: 0rem 1rem;
     background-color: white;
     flex-wrap: wrap;
     display: flex;
@@ -271,14 +281,90 @@ button {
 }
 
 .content-course {
-    margin: 1rem 0 1.5rem 1rem;
+    margin: 1rem 1rem 1.5rem 1rem;
+}
+
+.content-course h3 {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+/* Thesis */
+
+#thesis h1 {
+    padding: 2rem 0;
+}
+
+#thesis {
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+}
+
+#thesis-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 2rem 1.5rem;
+}
+
+#thesis-col-left {
+    width: 60%;
+    margin-right: 1.5rem;
+}
+
+#thesis-col-left video {
+    width: 100%;
+}
+
+#thesis-col-left h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#thesis-col-right {
+    width: 40%;
+}
+
+#thesis-col-right .img-container {
+    width: 35%;
+    height: auto;
+    padding: 1rem;
+}
+
+#thesis-col-right img {
+    width: 100%;
+    height: auto;
+}
+
+#thesis-col-right .text-container {
+    width: 65%;
+    height: auto;
+    text-align: left;
+    justify-content: center;
 }
 
 
+/* footer */
 
+footer {
+    border-top: 1px solid lightgray;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 4rem;
+}
 
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-
-video {
-    width: 100%;
+.links a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
 }
