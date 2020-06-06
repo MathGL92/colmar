@@ -208,6 +208,7 @@ button {
     #description-banner {
         width: 100%;
         padding: 0 1rem 2rem 1rem;
+        text-align: center;
     }
 
     #description-banner h1 {
